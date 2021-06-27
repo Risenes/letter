@@ -154,9 +154,6 @@ function boxFunctionArm() {
 	}
 }
 
-function () {
-	
-}
 
 
 
