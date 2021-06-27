@@ -145,7 +145,6 @@ function boxFunctionWeather() {
 	}
 }
 
-
 function boxFunctionArm() {
 	let checkBox = document.getElementById("Arm");
 	if (checkBox.checked == true) {
