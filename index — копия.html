@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Генератор письма</title>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<header class="header">
+				<div class="header__bg">
+					<div class="container">
+						<div class="header__body">
+							<h1 class="header__title">Генератор письма</h1>
+							<div class="header__text">Генератор поможет вам написать простое письмо сенсею или другу. В котором вы
+								сможете обсудить погоду, здоровье и дргие простые темы.</div>
+							<a class="header__link" href="#letter">Написать</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="content" id="letter">
+				<div class="content__bg">
+					<div class="container">
+						<div class="content__body">
+							<div class="form">
+								<div class="form__title">Генератор письма</div>
+
+								<form method="POST" name="letter__form">
+
+									<div class="generator__body">
+										<div class="generator__season">
+											<input type="checkbox" id="SeasonHello"> Сезонное
+											приветствие
+										</div>
+										<div class="generator__city city">
+											<div class="city__title">Введите город</div>
+											<div class="city__input"><input size="20" name="selectCity" placeholder="На японском"></div>
+										</div>
+										<div class="generator__weather weather">
+											<div class="weather__checkbox"><input type="checkbox" id="Weather" onclick="boxFunctionWeather()">
+												Выбрать погоду</div>
+											<div class="weather__select" id="selectWeather" style="display:block">
+												<select name="weather" id="weather" disabled>
+													<optgroup label="Весна">
+														<option value=0>Светит солнце</option>
+														<option value=1>Идет дождь</option>
+														<option value=2>Идет снег</option>
+														<option value=3>Тает снег</option>
+													</optgroup>
+													<optgroup label="Лето">
+														<option value=4>Жарко</option>
+														<option value=5>Очень жарко</option>
+														<option value=6>Идет дождь</option>
+													</optgroup>
+													<optgroup label="Осень">
+														<option value=7>Жарко</option>
+														<option value=8>Похоладало</option>
+														<option value=9>Идет дождь</option>
+													</optgroup>
+													<optgroup label="Зима">
+														<option value=10>Холодно</option>
+														<option value=11>Очень холодно</option>
+														<option value=12>Идет снег</option>
+														<option value=13>Светит солнце</option>
+													</optgroup>
+												</select>
+											</div>
+										</div>
+										<div class="generator__health">
+											<input type="checkbox" id="Health"> 私の元気
+										</div>
+										<div class="generator__arm">
+											<div class="arm__checkbox"><input type="checkbox" id="Arm" onclick="boxFunctionArm()"> Мои успехи
+											</div>
+											<div class="arm__select" id="selectArm" style="display:block">
+												<select name="selfArm" id="selfArm" disabled>
+													<option value=0>Сакухин удался</option>
+													<option value=1>Я рукожоп</option>
+												</select>
+											</div>
+										</div>
+										<div class="generator__name name">
+											<div class="name__title">Введите имя</div>
+											<div class="name__input"> <input class="name__input" size="20" name="selectName"
+													placeholder="На японском"></div>
+										</div>
+									</div>
+								</form>
+
+								<div class="btn-letter"><input type="button" value="Сгенерировать" class="btncls" onclick="getValue();">
+								</div>
+							</div>
+							<div class="letter">
+								<div class="letter__body">緒方先生こんばんは。</div>
+								<div class="letter__date">令和3年6月12日</div>
+								<div class="letter__name">コスチャ</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+			</footer>
+		</main>
+	</div>
+	<script src="script/script.js"></script>
+</body>
+
+</html>

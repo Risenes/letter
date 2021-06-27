@@ -1,0 +1,247 @@
+//<Подключаем шрифт>=======================================================
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+//</Подключаем шрифт>=======================================================
+
+//<Шрифт по умолчанию>=======================================================
+$fontfamily: "Noto Serif";
+//</Шрифт по умолчанию>=======================================================
+
+@import "_nullstyle";
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+}
+
+@import "_header";
+@import "_footer";
+
+.header {
+  // .header__bg
+
+  &__bg {
+    background-image: url(../img/full-bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  // .header__body
+
+  &__body {
+    //background-color: blanchedalmond;
+    height: 100vh;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  // .header__title
+
+  &__title {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  // .header__text
+
+  &__text {
+    background: rgba($color: #797979, $alpha: 0.4);
+    font-size: 25px;
+    line-height: 30px;
+    color: black;
+  }
+
+  // .header__link
+
+  &__link {
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    //background-color: gray;
+    align-self: center;
+    padding: 0 20px;
+    border-radius: 10px;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+}
+
+.content {
+  // .content__bg
+
+  &__bg {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  // .content__body
+
+  &__body {
+    height: 100vh;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+}
+
+.form {
+  background-color: gray;
+  color: white;
+  margin: 15px 0;
+  border-radius: 20px;
+  
+  
+
+  &__title {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
+.generator {
+  
+  // .generator__body
+
+  &__body {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  // .generator__season
+
+  &__season {
+    padding: 10px 10px;
+  }
+
+  // .generator__city
+
+  &__city {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px;
+    justify-content: space-between;
+  }
+  // .generator__weather
+
+  &__weather {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  // .generator__health
+
+  &__health {
+    padding: 10px 10px;
+    font-family: "Noto Serif JP";
+  }
+
+  // .generator__arm
+
+  &__arm {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  // .generator__name
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px;
+    justify-content: space-between;
+  }
+}
+
+.arm__checkbox {
+  padding: 0px 0 10px 0;
+}
+
+.weather__checkbox {
+  padding: 0px 0 10px 0;
+}
+
+.btn-letter {
+  padding: 10px 0;
+}
+
+.btncls {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.letter {
+  display: inline-block;
+  height: 800px;
+  
+  background-image: url(..//img/letterBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 100%;
+  // .letter__body
+
+  &__body {
+    flex: 1 1 auto;
+    writing-mode: vertical-rl;
+    font-family: "Noto Serif JP";
+    font-size: 30px;
+    line-height: 50px;
+    text-align: start;
+    
+  }
+  // .letter__date
+
+  &__date {
+    writing-mode: vertical-rl;
+    font-family: "Noto Serif JP";
+    font-size: 30px;
+    line-height: 50px;
+    text-orientation: upright;
+    align-self: flex-start;
+  }
+  // .letter__name
+
+  &__name {
+    writing-mode: vertical-rl;
+    font-family: "Noto Serif JP";
+    font-size: 30px;
+    line-height: 50px;
+    align-self: flex-end;
+  }
+}
