@@ -88,7 +88,7 @@ $fontfamily: "Noto Serif";
 
 .content {
   background-color: black;
-  height: 100vh;
+  // height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,12 +96,11 @@ $fontfamily: "Noto Serif";
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 
   // .content__body
 
   &__body {
-    height: 100vh;
+    // height: 100vh;
     flex: 1 1 auto;
     margin: 0 auto;
     text-align: center;
@@ -120,10 +119,11 @@ $fontfamily: "Noto Serif";
 .generator {
   background-color: gray;
   border-radius: 50px;
-  height: 18%;
+
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 10px;
   // .generator__title
 
   &__title {
@@ -241,9 +241,10 @@ $fontfamily: "Noto Serif";
   }
 }
 .letter {
-  margin-top: 20px;
+  margin: 20px 0;
   flex: 0 1 auto;
   height: 90%;
+  min-height: 600px;
   max-height: 600px;
   background-image: url(..//img/letterBG.png);
   background-repeat: no-repeat;
@@ -326,4 +327,113 @@ $fontfamily: "Noto Serif";
   text-transform: uppercase;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+@media (max-width: 1210px) {
+  .container {
+    max-width: 1030px;
+    padding: 0 15px;
+  }
+  .generator {
+    &__body {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__season {
+      margin: 5px;
+    }
+    &__city {
+      margin: 5px;
+    }
+    &__weather {
+      margin: 5px;
+    }
+    &__health {
+      margin: 5px;
+    }
+    &__arm {
+      margin: 5px;
+    }
+  }
+  .letter {
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 930px;
+    padding: 0 15px;
+  }
+  .letter {
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 730px;
+    padding: 0 15px;
+  }
+  .letter {
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 530px;
+    padding: 0 15px;
+  }
+  .letter {
+    display: flex;
+    width: 95%;
+    writing-mode: horizontal-tb;
+    margin: 5px 5px;
+    flex: 1 1 auto;
+    flex-direction: column;
+    &__hello {
+      writing-mode: horizontal-tb;
+      text-align: start;
+      align-self: auto;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__body {
+      writing-mode: horizontal-tb;
+      word-wrap: break-word;
+      word-break: keep-all;
+      text-align: start;
+      align-self: auto;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__bye {
+      writing-mode: horizontal-tb;
+      word-wrap: break-word;
+      word-break: keep-all;
+      text-align: start;
+      align-self: auto;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__date {
+      writing-mode: horizontal-tb;
+      word-wrap: break-word;
+      word-break: keep-all;
+      text-align: start;
+      align-self: auto;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    &__name {
+      writing-mode: horizontal-tb;
+      word-wrap: break-word;
+      word-break: keep-all;
+      text-align: start;
+      align-self: auto;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
 }
